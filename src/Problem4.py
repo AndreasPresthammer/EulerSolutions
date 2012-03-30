@@ -9,12 +9,12 @@ def is_palindromic(number):
 
 def find_largest_3digit_products_that_make_palindrome():
     
-    foo = [x*y 
+    is_even_for_all_in_range = [x*y 
            for x in range(999, 99, -1) 
            for y in range(999, 99, -1) 
            if is_palindromic(x*y)]
     
-    return max(foo)
+    return max(is_even_for_all_in_range)
 
 class Test(unittest.TestCase):
 
